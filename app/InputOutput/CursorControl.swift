@@ -1,4 +1,5 @@
 import Cocoa
+import CoreGraphics
 import ApplicationServices
 
 final class CursorControl {
@@ -21,7 +22,7 @@ final class CursorControl {
             Logger.permissions.error("Failed to create mouse move event")
             return
         }
-        event.post(tap: .cghidEventTap)
+        event.post(tap: CGEventTapLocation.cghidEventTap)
     }
 
     func click(type: GestureEvent, at location: CGPoint? = nil) {
@@ -61,22 +62,34 @@ final class CursorControl {
         guard let source = CGEventSource(stateID: .hidSystemState) else { return }
 
         let controlDown = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(0x3B), keyDown: true)
-        controlDown?.post(tap: .cghidEventTap)
+        controlDown?.post(tap: CGEventTapLocation.cghidEventTap)
 
         let controlUp: () -> Void = {
             let event = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(0x3B), keyDown: false)
-            event?.post(tap: .cghidEventTap)
+            event?.post(tap: CGEventTapLocation.cghidEventTap)
         }
 
         let down = CGEvent(keyboardEventSource: source, virtualKey: keyCode, keyDown: true)
         down?.flags = [.maskControl]
-        down?.post(tap: .cghidEventTap)
+        down?.post(tap: CGEventTapLocation.cghidEventTap)
 
         let up = CGEvent(keyboardEventSource: source, virtualKey: keyCode, keyDown: false)
         up?.flags = [.maskControl]
-        up?.post(tap: .cghidEventTap)
+        up?.post(tap: CGEventTapLocation.cghidEventTap)
 
         controlUp()
+    }
+
+    func scroll(by delta: CGFloat) {
+        guard !paused else { return }
+        guard ensureAccessibilityPermission() else { return }
+
+        let amount = Int32(delta.rounded())
+        guard amount != 0 else { return }
+
+        if let event = CGEvent(scrollWheelEvent2Source: nil, units: .pixel, wheelCount: 1, wheel1: amount, wheel2: 0, wheel3: 0) {
+            event.post(tap: CGEventTapLocation.cghidEventTap)
+        }
     }
 
     private func click(button: CGMouseButton, downType: CGEventType, upType: CGEventType, at location: CGPoint) {
@@ -85,8 +98,8 @@ final class CursorControl {
             Logger.permissions.error("Failed to create mouse click event")
             return
         }
-        down.post(tap: .cghidEventTap)
-        up.post(tap: .cghidEventTap)
+        down.post(tap: CGEventTapLocation.cghidEventTap)
+        up.post(tap: CGEventTapLocation.cghidEventTap)
     }
 
     private func ensureAccessibilityPermission() -> Bool {

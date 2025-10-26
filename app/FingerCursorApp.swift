@@ -1,5 +1,6 @@
 import SwiftUI
 import Combine
+import CoreGraphics
 import ApplicationServices
 
 @main
@@ -29,7 +30,7 @@ final class AppViewModel: ObservableObject {
     @Published private(set) var dictationActive = false
     @Published var statusMessage = "Idle"
     @Published var showDiagnostics = false
-    @Published var showCameraDebug = false
+    @Published var showCameraDebug = true
     @Published private(set) var latestDebugFrame: CameraDebugFrame?
     @Published var gestureDebug = GestureDebugState()
 
@@ -154,8 +155,8 @@ final class AppViewModel: ObservableObject {
                 up.keyboardSetUnicodeString(stringLength: 1, unicodeString: pointer)
             }
 
-            down.post(tap: .cghidEventTap)
-            up.post(tap: .cghidEventTap)
+            down.post(tap: CGEventTapLocation.cghidEventTap)
+            up.post(tap: CGEventTapLocation.cghidEventTap)
         }
     }
 

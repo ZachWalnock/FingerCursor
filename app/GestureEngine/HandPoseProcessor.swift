@@ -8,7 +8,7 @@ final class HandPoseProcessor {
     private let handler = VNSequenceRequestHandler()
     private let detectionQueue = DispatchQueue(label: "com.fingercursor.handpose")
 
-    init(maximumHands: Int = 1) {
+    init(maximumHands: Int = 2) {
         request = VNDetectHumanHandPoseRequest()
         request.maximumHandCount = maximumHands
     }
@@ -20,13 +20,9 @@ final class HandPoseProcessor {
         detectionQueue.sync {
             do {
                 try handler.perform([request], on: pixelBuffer, orientation: orientation)
-                guard let observation = request.results?.first else {
-                    resultState = .none
-                    return
-                }
-
-                let landmarks = self.makeLandmarks(from: observation)
-                resultState = landmarks.map { .tracking($0) } ?? .none
+                let observations = (request.results ?? []).prefix(request.maximumHandCount)
+                let landmarksList = observations.compactMap { self.makeLandmarks(from: $0) }
+                resultState = landmarksList.isEmpty ? .none : .tracking(landmarksList)
             } catch {
                 Logger.tracking.error("Vision hand pose failed: \(error.localizedDescription)")
                 resultState = .none

@@ -43,8 +43,12 @@ final class TrackingCoordinator: NSObject {
     private var lastGestureDebug = GestureDebugState()
     private var fistSwipeOrigin: CGPoint?
     private var fistSwipeTimestamp: Double?
+    private var lastScrollSample: CGFloat?
+    private var lastScrollTimestamp: Double?
+    private var primaryHandReference: HandLandmarks?
 
     private let handLossTimeout: TimeInterval = 0.2
+    private let primaryRetentionThreshold: CGFloat = 0.18
 
     init(configStore: ConfigStore) {
         self.configStore = configStore
@@ -104,6 +108,8 @@ final class TrackingCoordinator: NSObject {
             self.lastCursorPosition = nil
             self.lastTimestamp = nil
             self.lastHandObservation = nil
+            self.smoothedOrientation = nil
+            self.primaryHandReference = nil
             self.gestureDetector.reset()
             self.notifyStatus(reason)
         }
@@ -140,9 +146,9 @@ final class TrackingCoordinator: NSObject {
         switch state {
         case .none:
             handleHandLost()
-        case .tracking(let landmarks):
+        case .tracking(let hands):
             lastHandObservation = Date()
-            processLandmarks(landmarks, timestamp: timestamp)
+            processHands(hands, timestamp: timestamp)
         }
     }
 
@@ -162,9 +168,55 @@ final class TrackingCoordinator: NSObject {
         lastGestureDebug = GestureDebugState()
         fistSwipeOrigin = nil
         fistSwipeTimestamp = nil
+        lastScrollSample = nil
+        lastScrollTimestamp = nil
+        primaryHandReference = nil
     }
 
-    private func processLandmarks(_ landmarks: HandLandmarks, timestamp: CMTime) {
+    private func processHands(_ hands: [HandLandmarks], timestamp: CMTime) {
+        guard let (index, primaryHand) = selectPrimaryHand(from: hands) else {
+            return
+        }
+
+        processPointerHand(primaryHand, timestamp: timestamp)
+
+        let secondary = hands.enumerated().first { $0.offset != index }?.element
+        let timestampSeconds = CMTimeGetSeconds(timestamp)
+        processScrollHand(secondary, timestamp: timestampSeconds)
+    }
+
+    private func selectPrimaryHand(from hands: [HandLandmarks]) -> (Int, HandLandmarks)? {
+        if let reference = primaryHandReference {
+            var bestMatch: (offset: Int, hand: HandLandmarks, distance: CGFloat)?
+
+            for (index, hand) in hands.enumerated() {
+                let distance = hypot(hand.palmCenter.x - reference.palmCenter.x,
+                                     hand.palmCenter.y - reference.palmCenter.y)
+                if let currentBest = bestMatch {
+                    if distance < currentBest.distance {
+                        bestMatch = (index, hand, distance)
+                    }
+                } else {
+                    bestMatch = (index, hand, distance)
+                }
+            }
+
+            if let match = bestMatch, match.distance < primaryRetentionThreshold {
+                primaryHandReference = match.hand
+                return (match.offset, match.hand)
+            }
+        }
+
+        guard let primary = hands.enumerated().max(by: { $0.element.visibility < $1.element.visibility }) else {
+            primaryHandReference = nil
+            return nil
+        }
+
+        primaryHandReference = primary.element
+        return (primary.offset, primary.element)
+    }
+
+    private func processPointerHand(_ landmarks: HandLandmarks, timestamp: CMTime) {
         guard let screenFrame = virtualScreenBounds() else { return }
 
         let orientationHint = computeOrientationHint(for: landmarks)
@@ -198,6 +250,32 @@ final class TrackingCoordinator: NSObject {
         notifyStatus(.tracking)
 
         dispatchGestures(for: landmarks, cursorPoint: cursorPoint, timestampSeconds: timestampSeconds)
+    }
+
+    private func processScrollHand(_ hand: HandLandmarks?, timestamp: Double) {
+        guard let hand else {
+            lastScrollSample = nil
+            lastScrollTimestamp = nil
+            return
+        }
+
+        let sample = hand.indexTip.y
+
+        if let previous = lastScrollSample {
+            let deltaValue = previous - sample
+            let threshold: CGFloat = 0.004
+            if abs(deltaValue) > threshold {
+                let scale: CGFloat = 1600
+                var pixels = deltaValue * scale
+                pixels = max(min(pixels, 90), -90)
+                if abs(pixels) >= 1 {
+                    cursorControl.scroll(by: pixels)
+                }
+            }
+        }
+
+        lastScrollSample = sample
+        lastScrollTimestamp = timestamp
     }
 
     private func applyCursorDynamics(target: CGPoint, timestamp: Double) -> CGPoint {
@@ -401,15 +479,16 @@ final class TrackingCoordinator: NSObject {
         let ciImage = CIImage(cvPixelBuffer: buffer).oriented(orientation)
         guard let cgImage = ciContext.createCGImage(ciImage, from: ciImage.extent) else { return }
 
-        let landmarks: HandLandmarks?
-        switch state {
-        case .none:
-            landmarks = nil
-        case .tracking(let detail):
-            landmarks = detail
-        }
+        let primary: HandLandmarks? = {
+            switch state {
+            case .none:
+                return nil
+            case .tracking(let hands):
+                return hands.max(by: { $0.visibility < $1.visibility })
+            }
+        }()
 
-        let frame = CameraDebugFrame(image: cgImage, landmarks: landmarks, timestamp: timestamp)
+        let frame = CameraDebugFrame(image: cgImage, landmarks: primary, timestamp: timestamp)
 
         Task { @MainActor in
             handler(frame)

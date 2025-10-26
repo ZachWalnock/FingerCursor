@@ -24,26 +24,23 @@ struct MenuBarView: View {
             ))
             .toggleStyle(.switch)
 
-            Toggle("Camera Visual", isOn: Binding(
-                get: { viewModel.showCameraDebug },
-                set: { viewModel.showCameraDebug = $0 }
-            ))
-            .toggleStyle(.switch)
+            Text("Camera View")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.secondary)
 
-        if viewModel.showCameraDebug {
             CameraDebugView(viewModel: viewModel)
-                .transition(.opacity)
-        }
+                .frame(height: 220)
+                .transition(.identity)
 
-        Divider()
+            Divider()
 
-        GestureThresholdSection(viewModel: viewModel)
+            GestureThresholdSection(viewModel: viewModel)
 
-        Divider()
+            Divider()
 
-        Button(viewModel.showDiagnostics ? "Hide Diagnostics" : "Show Diagnostics") {
-            viewModel.showDiagnostics.toggle()
-        }
+            Button(viewModel.showDiagnostics ? "Hide Diagnostics" : "Show Diagnostics") {
+                viewModel.showDiagnostics.toggle()
+            }
 
             Divider()
 
