@@ -1,0 +1,188 @@
+{
+  "" : {
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursor-master.dia",
+    "emit-module-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursor-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursor-master-emit-module.dia",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursor-master.swiftdeps"
+  },
+  "/Users/zach/Applications/finger-cursor/app/CalibrationWizard.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CalibrationWizard.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CalibrationWizard.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CalibrationWizard.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CalibrationWizard.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CalibrationWizard.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CalibrationWizard.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CalibrationWizard.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CalibrationWizard~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/DiagnosticsOverlay.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/DiagnosticsOverlay.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/DiagnosticsOverlay.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/DiagnosticsOverlay.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/DiagnosticsOverlay.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/DiagnosticsOverlay.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/DiagnosticsOverlay.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/DiagnosticsOverlay.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/DiagnosticsOverlay~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/FingerCursorApp.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/GestureEngine/GestureDetector.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GestureDetector.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GestureDetector.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GestureDetector.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GestureDetector.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GestureDetector.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GestureDetector.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GestureDetector.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GestureDetector~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/GestureEngine/HandLandmarks.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandLandmarks.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandLandmarks.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandLandmarks.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandLandmarks.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandLandmarks.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandLandmarks.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandLandmarks.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandLandmarks~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/GestureEngine/HandPoseProcessor.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/GestureEngine/Mapping.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/GestureEngine/OneEuroFilter.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/InputOutput/CameraCapture.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CameraCapture.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CameraCapture.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CameraCapture.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CameraCapture.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CameraCapture.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CameraCapture.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CameraCapture.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CameraCapture~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/InputOutput/CursorControl.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CursorControl.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CursorControl.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CursorControl.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CursorControl.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CursorControl.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CursorControl.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CursorControl.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/CursorControl~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/InputOutput/Dictation.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/InputOutput/MicCapture.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/MicCapture.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/MicCapture.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/MicCapture.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/MicCapture.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/MicCapture.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/MicCapture.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/MicCapture.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/MicCapture~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/InputOutput/TrackingCoordinator.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/TrackingCoordinator.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/TrackingCoordinator.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/TrackingCoordinator.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/TrackingCoordinator.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/TrackingCoordinator.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/TrackingCoordinator.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/TrackingCoordinator.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/TrackingCoordinator~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/Menubar.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Menubar.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Menubar.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Menubar.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Menubar.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Menubar.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Menubar.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Menubar.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Menubar~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/SettingsView.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/SettingsView.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/SettingsView.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/SettingsView.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/SettingsView.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/SettingsView.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/Utils/Config.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Config.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Config.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Config.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Config.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Config.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Config.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Config.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Config~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/app/Utils/Logging.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging~partial.swiftmodule"
+  },
+  "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

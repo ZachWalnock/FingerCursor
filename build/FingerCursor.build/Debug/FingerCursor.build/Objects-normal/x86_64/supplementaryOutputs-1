@@ -1,0 +1,18 @@
+"/Users/zach/Applications/finger-cursor/app/InputOutput/Dictation.swift":
+  diagnostics: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.dia"
+  dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.d"
+  object: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.o"
+  swift-dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.swiftdeps"
+  const-values: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Dictation.swiftconstvalues"
+"/Users/zach/Applications/finger-cursor/app/Utils/Logging.swift":
+  object: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.o"
+  const-values: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.swiftconstvalues"
+  swift-dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.swiftdeps"
+  diagnostics: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.dia"
+  dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Logging.d"
+"/Users/zach/Applications/finger-cursor/app/GestureEngine/OneEuroFilter.swift":
+  swift-dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.swiftdeps"
+  diagnostics: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.dia"
+  object: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.o"
+  dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.d"
+  const-values: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/OneEuroFilter.swiftconstvalues"

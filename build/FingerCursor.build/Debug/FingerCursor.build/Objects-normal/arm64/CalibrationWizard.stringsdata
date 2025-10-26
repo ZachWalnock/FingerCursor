@@ -1,0 +1,40 @@
+{
+  "source": "/Users/zach/Applications/finger-cursor/app/CalibrationWizard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Calibration",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Back",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Finish",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Next",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 34
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,80 @@
+{
+  "source": "/Users/zach/Applications/finger-cursor/app/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Smoothing",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 8
+        }
+      },
+      {
+        "comment": "",
+        "key": "Gestures",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Diagnostics",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Min Cutoff",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 13
+        }
+      },
+      {
+        "comment": "",
+        "key": "Beta",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "Derivative Cutoff",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pinch Threshold: %lld px",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Two Finger Threshold: %lld px",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enable Diagnostics",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 45
+        }
+      }
+    ]
+  },
+  "version": 1
+}

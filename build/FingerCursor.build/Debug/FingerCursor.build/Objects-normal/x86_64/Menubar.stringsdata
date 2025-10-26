@@ -1,0 +1,56 @@
+{
+  "source": "/Users/zach/Applications/finger-cursor/app/Menubar.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Tracking",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Dictation",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Calibration Wizard",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Hide Diagnostics",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Show Diagnostics",
+        "location": {
+          "startingColumn": 69,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Quit FingerCursor",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 40
+        }
+      }
+    ]
+  },
+  "version": 1
+}

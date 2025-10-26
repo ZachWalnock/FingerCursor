@@ -1,0 +1,16 @@
+{
+  "source": "/Users/zach/Applications/finger-cursor/app/FingerCursorApp.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "FingerCursor",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 14
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,18 @@
+"/Users/zach/Applications/finger-cursor/app/GestureEngine/Mapping.swift":
+  diagnostics: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.dia"
+  object: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.o"
+  const-values: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.swiftconstvalues"
+  swift-dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.swiftdeps"
+  dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/Mapping.d"
+"/Users/zach/Applications/finger-cursor/app/GestureEngine/HandPoseProcessor.swift":
+  dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.d"
+  diagnostics: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.dia"
+  object: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.o"
+  const-values: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.swiftconstvalues"
+  swift-dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/HandPoseProcessor.swiftdeps"
+"/Users/zach/Applications/finger-cursor/app/FingerCursorApp.swift":
+  object: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.o"
+  dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.d"
+  const-values: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.swiftconstvalues"
+  diagnostics: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.dia"
+  swift-dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/x86_64/FingerCursorApp.swiftdeps"

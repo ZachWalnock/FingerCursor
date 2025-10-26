@@ -1,0 +1,18 @@
+"/Users/zach/Applications/finger-cursor/app/FingerCursorApp.swift":
+  const-values: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/FingerCursorApp.swiftconstvalues"
+  swift-dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/FingerCursorApp.swiftdeps"
+  diagnostics: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/FingerCursorApp.dia"
+  dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/FingerCursorApp.d"
+  object: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/FingerCursorApp.o"
+"/Users/zach/Applications/finger-cursor/app/GestureEngine/HandPoseProcessor.swift":
+  dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/HandPoseProcessor.d"
+  const-values: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/HandPoseProcessor.swiftconstvalues"
+  swift-dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/HandPoseProcessor.swiftdeps"
+  object: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/HandPoseProcessor.o"
+  diagnostics: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/HandPoseProcessor.dia"
+"/Users/zach/Applications/finger-cursor/app/GestureEngine/Mapping.swift":
+  const-values: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/Mapping.swiftconstvalues"
+  diagnostics: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/Mapping.dia"
+  dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/Mapping.d"
+  swift-dependencies: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/Mapping.swiftdeps"
+  object: "/Users/zach/Applications/finger-cursor/build/FingerCursor.build/Debug/FingerCursor.build/Objects-normal/arm64/Mapping.o"
