@@ -24,6 +24,8 @@
     <string>FingerCursor requires camera access to track your hand.</string>
     <key>NSMicrophoneUsageDescription</key>
     <string>FingerCursor uses the microphone for voice dictation.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>FingerCursor transcribes your voice while the dictation gesture is active.</string>
     <key>NSAppleEventsUsageDescription</key>
     <string>FingerCursor needs to send commands to paste recognized text.</string>
     <key>NSSupportsAutomaticTermination</key>

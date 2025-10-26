@@ -24,12 +24,43 @@ enum GestureEvent {
     case swipe(direction: SwipeDirection)
 }
 
+extension GestureEvent: Hashable {
+    static func == (lhs: GestureEvent, rhs: GestureEvent) -> Bool {
+        switch (lhs, rhs) {
+        case (.leftClick, .leftClick), (.rightClick, .rightClick), (.dictationStart, .dictationStart), (.dictationStop, .dictationStop):
+            return true
+        case (.swipe(let a), .swipe(let b)):
+            return a == b
+        default:
+            return false
+        }
+    }
+
+    func hash(into hasher: inout Hasher) {
+        switch self {
+        case .leftClick:
+            hasher.combine(0)
+        case .rightClick:
+            hasher.combine(1)
+        case .dictationStart:
+            hasher.combine(2)
+        case .dictationStop:
+            hasher.combine(3)
+        case .swipe(let direction):
+            hasher.combine(4)
+            hasher.combine(direction)
+        }
+    }
+}
+
 enum SwipeDirection {
     case left
     case right
     case up
     case down
 }
+
+extension SwipeDirection: Hashable {}
 
 final class GestureDetector {
     struct Parameters {
@@ -49,14 +80,14 @@ final class GestureDetector {
     func reset() {
         state = []
         timers.removeAll()
-        lastEventTimestamp.removeAll()
+        lastClickTimestamp.removeAll()
         debugState = GestureDebugState()
         lastPalmActive = false
     }
 
     private var state: GestureState = []
     private var timers: [GestureState: Date] = [:]
-    private var lastEventTimestamp: [GestureEvent: Date] = [:]
+    private var lastClickTimestamp: [ClickType: Date] = [:]
     private let clock: () -> Date
     private(set) var debugState = GestureDebugState()
     private var lastPalmActive = false
@@ -70,6 +101,7 @@ final class GestureDetector {
             state = []
             timers.removeAll()
             debugState = GestureDebugState()
+            lastClickTimestamp.removeAll()
             lastPalmActive = false
             return []
         }
@@ -98,13 +130,13 @@ final class GestureDetector {
             state.remove([.leftClick, .twoFinger])
         } else {
             process(stateFlag: .leftClick, isActive: pinkyRaised, now: now, debounce: parameters.debounce, hold: parameters.hold) {
-                if self.canEmit(event: .leftClick, refractory: parameters.refractory, now: now) {
+                if self.canEmit(click: .left, refractory: parameters.refractory, now: now) {
                     triggered.append(.leftClick)
                 }
             }
 
             process(stateFlag: .twoFinger, isActive: twoFingerActive, now: now, debounce: parameters.debounce, hold: parameters.hold) {
-                if self.canEmit(event: .rightClick, refractory: parameters.refractory, now: now) {
+                if self.canEmit(click: .right, refractory: parameters.refractory, now: now) {
                     triggered.append(.rightClick)
                 }
             }
@@ -134,12 +166,17 @@ final class GestureDetector {
         }
     }
 
-    private func canEmit(event: GestureEvent, refractory: TimeInterval, now: Date) -> Bool {
-        if let last = lastEventTimestamp[event], now.timeIntervalSince(last) < refractory {
+    private func canEmit(click: ClickType, refractory: TimeInterval, now: Date) -> Bool {
+        if let last = lastClickTimestamp[click], now.timeIntervalSince(last) < refractory {
             return false
         }
-        lastEventTimestamp[event] = now
+        lastClickTimestamp[click] = now
         return true
+    }
+
+    private enum ClickType: Hashable {
+        case left
+        case right
     }
 
     private func distance(_ lhs: CGPoint, _ rhs: CGPoint) -> CGFloat {

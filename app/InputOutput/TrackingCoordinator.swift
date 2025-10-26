@@ -197,7 +197,7 @@ final class TrackingCoordinator: NSObject {
         cursorControl.moveCursor(to: cursorPoint)
         notifyStatus(.tracking)
 
-        dispatchGestures(for: landmarks)
+        dispatchGestures(for: landmarks, cursorPoint: cursorPoint, timestampSeconds: timestampSeconds)
     }
 
     private func applyCursorDynamics(target: CGPoint, timestamp: Double) -> CGPoint {
@@ -243,7 +243,7 @@ final class TrackingCoordinator: NSObject {
         return clamp(point: next, to: virtualScreenBounds() ?? fallbackFrame)
     }
 
-    private func dispatchGestures(for landmarks: HandLandmarks) {
+    private func dispatchGestures(for landmarks: HandLandmarks, cursorPoint: CGPoint, timestampSeconds: Double) {
         let pinkySetting = min(max(currentConfig.gestureThresholds.pinchPixels, 5), 80)
         let pinkyScale = CGFloat((pinkySetting - 5) / 75)
         let pinkyLiftMinimum = CGFloat(0.06 + pinkyScale * 0.12)

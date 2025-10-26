@@ -144,13 +144,19 @@ final class AppViewModel: ObservableObject {
         guard !text.isEmpty else { return }
         guard let source = CGEventSource(stateID: .hidSystemState) else { return }
 
-        let down = CGEvent(keyboardEventSource: source, virtualKey: 0, keyDown: true)
-        down?.keyboardSetUnicodeString(string: text)
-        down?.post(tap: .cghidEventTap)
+        for scalar in text.unicodeScalars {
+            var character = UniChar(scalar.value)
+            guard let down = CGEvent(keyboardEventSource: source, virtualKey: 0, keyDown: true),
+                  let up = CGEvent(keyboardEventSource: source, virtualKey: 0, keyDown: false) else { continue }
 
-        let up = CGEvent(keyboardEventSource: source, virtualKey: 0, keyDown: false)
-        up?.keyboardSetUnicodeString(string: text)
-        up?.post(tap: .cghidEventTap)
+            withUnsafePointer(to: &character) { pointer in
+                down.keyboardSetUnicodeString(stringLength: 1, unicodeString: pointer)
+                up.keyboardSetUnicodeString(stringLength: 1, unicodeString: pointer)
+            }
+
+            down.post(tap: .cghidEventTap)
+            up.post(tap: .cghidEventTap)
+        }
     }
 
     private func toggleCameraDebug(_ enabled: Bool) {
